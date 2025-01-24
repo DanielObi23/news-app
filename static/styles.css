@@ -1,0 +1,10 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background: rgb(7, 174, 90);
+}
+
+main {
+    background-color: aliceblue;
+}

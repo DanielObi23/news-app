@@ -1,0 +1,1 @@
+-create a search history using a database
