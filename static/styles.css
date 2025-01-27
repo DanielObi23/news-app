@@ -1,20 +1,27 @@
 body {
     display: flex;
     justify-content: center;
-    align-content: center;
+    align-items: center;
     background: rgb(7, 174, 90);
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
 }
 
 main {
     background-color: aliceblue;
     display: flex;
     justify-content: center;
-    align-content: center;
+    align-items: center; 
     flex-direction: column;
+    padding: 2rem;
+    max-width: 90%;
+    width: 600px; 
+    margin: auto; 
 }
-
 main > div {
     margin: 2rem;
+    width: 100%;
 }
 
 .topic {
@@ -29,7 +36,6 @@ main > div {
 
 #listBox {
     margin-left: 20px;
-    margin-top: 0.5rem;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -43,10 +49,21 @@ main > div {
 input, label, select {
     margin: 0.5rem 0;
 }
-@media (max-width: 930px) {
+
+@media (max-width: 800px) {
+    main {
+        width: 100%;
+        padding: 1rem;
+    }
+    
+    main > div {
+        margin: 1rem;
+    }
+    
     .topic {
         display: block;
     }
+    
     .topic > div {
         margin: 1rem auto;
     }
