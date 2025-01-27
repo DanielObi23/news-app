@@ -1,4 +1,4 @@
-const learnMoreButton = document.getElementById("learnMore");
+const learnMoreButton = document.getElementById("button");
 const hideButton = document.getElementById("hide");
 
 function learnMore() {
@@ -16,7 +16,7 @@ function learnMore() {
 function hideEverything() {
     hideButton.style.display = "none";
     hideButton.removeEventListener("click", hideEverything)
-    learnMoreButton.innerHTML = "Learn More!";
+    learnMoreButton.innerHTML = "<button>Learn More!</button>";
     learnMoreButton.addEventListener("click", learnMore)
 }
 
