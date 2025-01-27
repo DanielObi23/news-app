@@ -7,4 +7,47 @@ body {
 
 main {
     background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+main > div {
+    margin: 2rem;
+}
+
+.topic {
+    width: 100%;
+    display: flex;
+    height: auto;
+}
+
+.topic > input {
+    height: 1rem;
+}
+
+#listBox {
+    margin-left: 20px;
+    margin-top: 0.5rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#hide {
+    display: none;
+    padding-top: 0rem;
+}
+
+input, label, select {
+    margin: 0.5rem 0;
+}
+@media (max-width: 930px) {
+    .topic {
+        display: block;
+    }
+    .topic > div {
+        margin: 1rem auto;
+    }
 }
