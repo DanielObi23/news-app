@@ -30,7 +30,7 @@
                 </select><br>
                 <label for="language">Language: </label>
                 <select name="language" id="language">
-                    <option value="none">None</option>
+                    <option value="none">All</option>
                     <option value="ar">Arabic</option>
                     <option value="de">German</option>
                     <option value="en">English</option>
@@ -59,33 +59,6 @@
                 <input type="date" name="from" id="from" min={{from_date}} max={{to_date}} value={{from_date}}><br>
                 <label for="to">To: </label>
                 <input type="date" name="to" id="to" min={{from_date}} max={{to_date}} value={{to_date}}><br>
-                <input type="submit" value="Search">
-            </form>
-        </div>
-
-        <div class="headline">
-            <h1>Type in the news topic for Headlines</h1>
-            <form method="post" action="/">
-                <label for="topic">Topic: </label>
-                <input type="text" name="topic" id="topic"><br>
-                <label for="sort-by">Sort by: </label>
-                <select name="sort-by" id="sort-by">
-                    <option value="relevancy">Relevancy</option>
-                    <option value="popularity">Popularity</option>
-                    <option value="publishedAt">Published at</option>
-                </select><br>
-                <label for="sort-by">Sort by: </label>
-                <select name="sort-by" id="sort-by">
-                    <option value="relevancy">Relevancy</option>
-                    <option value="popularity">Popularity</option>
-                    <option value="publishedAt">Published at</option>
-                </select><br>business entertainment general health science sports technology
-                <label for="sort-by">Sort by: </label>
-                <select name="sort-by" id="sort-by">
-                    <option value="relevancy">Relevancy</option>
-                    <option value="popularity">Popularity</option>
-                    <option value="publishedAt">Published at</option>
-                </select><br>
                 <input type="submit" value="Search">
             </form>
         </div>
