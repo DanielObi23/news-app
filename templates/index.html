@@ -8,18 +8,66 @@
 </head>
 <body>
     <main>
-        <h1>Type in the news topic</h1>
-        <form method="post" action="/">
-            <label for="topic">Topic: </label>
-            <input type="text" name="topic" id="topic"><br>
-            <label for="sort-by">Sort by: </label>
-            <select name="sort-by" id="sort-by">
-                <option value="relevancy">Relevancy</option>
-                <option value="popularity">Popularity</option>
-                <option value="publishedAt">Published at</option>
-            </select><br>
-            <input type="submit" value="Search">
-        </form>
+        <div class="everything">
+            <h1>Type in the news topic for Everything</h1>
+            <form method="post" action="/">
+                <div class="topic">
+                    <label for="topic">Topic: </label>
+                    <input type="text" name="topic" id="topic" required> 
+                    <div id="listBox">
+                        <button id="learnMore" type="button" >Learn More!</button><br>
+                        <button id="hide" type="button">Hide</button>
+                    </div>
+                </div>
+                <label for="sort-by">Sort by: </label>
+                <select name="sort-by" id="sort-by">
+                    <option value="relevancy">Relevancy</option>
+                    <option value="popularity">Popularity</option>
+                    <option value="publishedAt">Published at</option>
+                </select><br>
+                <label for="searchIn">Restrict field: </label>
+                <select name="searchIn" id="searchIn">
+                    <option value="title">Title</option>
+                    <option value="description">Description</option>
+                    <option value="content">Content</option>
+                </select><br>
+                <label for="pageSize">Page size: </label>
+                <input type="number" name="pageSize" id="pageSize" min="1" max="100"><br>
+                <label for="from">From: </label>
+                <input type="date" name="from" id="from"><br>
+                <label for="to">To: </label>
+                <input type="date" name="to" id="to"><br>
+                <input type="submit" value="Search">
+            </form>
+        </div>
+
+        <div class="headline">
+            <h1>Type in the news topic for Headlines</h1>
+            <form method="post" action="/">
+                <label for="topic">Topic: </label>
+                <input type="text" name="topic" id="topic"><br>
+                <label for="sort-by">Sort by: </label>
+                <select name="sort-by" id="sort-by">
+                    <option value="relevancy">Relevancy</option>
+                    <option value="popularity">Popularity</option>
+                    <option value="publishedAt">Published at</option>
+                </select><br>
+                <label for="sort-by">Sort by: </label>
+                <select name="sort-by" id="sort-by">
+                    <option value="relevancy">Relevancy</option>
+                    <option value="popularity">Popularity</option>
+                    <option value="publishedAt">Published at</option>
+                </select><br>business entertainment general health science sports technology
+                <label for="sort-by">Sort by: </label>
+                <select name="sort-by" id="sort-by">
+                    <option value="relevancy">Relevancy</option>
+                    <option value="popularity">Popularity</option>
+                    <option value="publishedAt">Published at</option>
+                </select><br>
+                <input type="submit" value="Search">
+            </form>
+        </div>
     </main>
+    <script src="./static/index.js"></script>
 </body>
 </html>

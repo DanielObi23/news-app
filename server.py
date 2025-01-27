@@ -8,10 +8,15 @@ app = Flask(__name__)
 def home():
     if request.method == 'POST':
         topic = request.form['topic']
+        sortBy = request.form['sort-by']
+        searchIn = request.form['searchIn']
+        pageSize = request.form['pageSize']
+        from_date = request.form['from']
+        to_date = request.form['to']
         url = f"https://newsapi.org/v2/everything?q={topic}&apiKey={API_KEY}"
         response = requests.get(url)
         data = response.json()
-        print(data)
+        print(topic, sortBy, searchIn, pageSize, from_date, to_date)
         return render_template('news.html', topic=topic)
     return render_template('index.html')
 
