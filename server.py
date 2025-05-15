@@ -2,7 +2,7 @@ from flask import request, Flask, render_template
 from datetime import datetime, timedelta
 import requests
 
-API_KEY = "b7a5e5365379415fb44da1db110c1d02"
+API_KEY = "api key"
 app = Flask(__name__)
 
 @app.route('/', methods=['GET', 'POST'])
